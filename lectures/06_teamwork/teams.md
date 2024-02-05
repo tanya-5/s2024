@@ -27,7 +27,7 @@ license: Creative Commons Attribution 4.0 International (CC BY 4.0)
 ----
 ## Now: First Short Team Meeting (10 min)
 
-* Move to table with your team number
+* Find your team number and seat area
 * Say hi, introduce yourself: Name? SE or ML background? Favorite movie? Fun fact?
 * Find time for first team meeting in next few days
 * Agree on primary communication until team meeting
@@ -496,6 +496,34 @@ Adjusting grades based on survey and communication with course staff
 </div>
 
 
+
+----
+## Share the Work
+
+* Team members have different strength and weaknesses – that's good
+* Make use of individual strength of team members (split, pair up, help, ...)
+* Usually somebody will take responsibility for team management tasks (e.g., schedule meetings, moderate, meeting notes, track work, reminders, check submission) or reporting
+  * Team management is work too
+  * Consider rotating
+
+
+
+----
+## Maintain Accountability
+
+<div class="smallish">
+ 
+* **Write down explicit deliverables: *Who* does *what* by *when***
+    - Be explicit about expected results, should be verifiable 
+    - Track completion, check off when done
+    - GitHub issues, Jira, Trello board, Miro, Google docs, Slack, ... – **single source of truth, with history tracking**
+* Complete deliverable list **during meeting**: everybody writes their own deliverables, others read all deliverables to check understanding
+    - if not completed during meeting or team member not at meeting, email assignment after meeting to everybody; no objection within 24h counts as agreement with task assignment
+* We will ask for evidence of this with the first milestone
+* Consider sharing with teams' TA mentor
+
+</div>
+
 ----
 ## Some Communication Tips
 
@@ -512,31 +540,6 @@ Adjusting grades based on survey and communication with course staff
 </div>
 
 
-----
-## Share the Work
-
-* Team members have different strength and weaknesses – that's good
-* Make use of individual strength of team members (split, pair up, help, ...)
-* Usually somebody will take responsibility for team management tasks (e.g., schedule meetings, moderate, meeting notes, track work, reminders, check submission) or reporting
-  * Team management is work too
-  * Consider rotating
-
-
-----
-## Maintain Accountability
-
-<div class="smallish">
- 
-* **Write down explicit deliverables: *Who* does *what* by *when***
-    - Be explicit about expected results, should be verifiable 
-    - Track completion, check off when done
-    - GitHub issues, Jira, Trello board, Miro, Google docs, Slack, ... – **single source of truth, with history tracking** (see next recitation)
-* Complete deliverable list **during meeting**: everybody writes their own deliverables, others read all deliverables to check understanding
-    - if not completed during meeting or team member not at meeting, email assignment after meeting to everybody; no objection within 24h counts as agreement with task assignment
-* We will ask for evidence of this with the first milestone
-* Consider sharing with teams' TA mentor
-
-</div>
 
 ----
 ## Recall: Common Sources of Conflict
