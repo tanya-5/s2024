@@ -137,6 +137,14 @@ leap days and month lengths) or can focus on implementation
 
 Will not randomly sample from distribution of all days
 
+
+----
+# The V-Model
+
+![V-model](v-model.svg)
+<!-- .element: class="stretch plain" -->
+
+
 ----
 ## Software Test Case Design
 
@@ -236,6 +244,11 @@ def busTicketPrice(age: Int,
 > There Is a Racial Divide in Speech-Recognition Systems, Researchers Say:
 > Technology from Amazon, Apple, Google, IBM and Microsoft misidentified 35 percent of words from people who were black. White people fared much better. -- [NYTimes March 2020](https://www.nytimes.com/2020/03/23/technology/speech-recognition-bias-apple-amazon-google.html)
 
+----
+## Not All Inputs are Equal
+
+![Corner cases in autonomous driving perception](av-weird-cases.jpg)
+<!-- .element: class="stretch plain" -->
 
 ----
 ## Not All Inputs are Equal
@@ -341,7 +354,7 @@ Ré, Christopher, Feng Niu, Pallavi Gudipati, and Charles Srisuwananukorn. "[Ove
 
 
 ---
-# Testing Model Capabilities
+# Behavioral Testing (Capabilities)
 
 
 ![Checklist](checklist.jpg)
@@ -630,9 +643,9 @@ Use to identify datasets for **subpopulations** and **capabilities**, not indivi
 
 
 ---
-# Automated (Random) Testing and Invariants
+# Testing Invariants with Unlabeled Data
 
-(if it wasn't for that darn oracle problem)
+(random testing, if it wasn't for that darn oracle problem)
 
 ![Random dice throw](random.jpg)
 
@@ -882,40 +895,18 @@ Paths:
 Note: example source: http://web.cs.iastate.edu/~weile/cs641/9.SymbolicExecution.pdf
 
 ----
-## Generating Inputs for ML Problems
+## Generating (Unlabled) Inputs for ML Problems
+
+<div class="smallish">
 
 * Completely random data generation (uniform sampling from each feature's domain)
 * Using knowledge about feature distributions (sample from each feature's distribution)
 * Knowledge about dependencies among features and whole population distribution (e.g., model with probabilistic programming language)
 * Mutate from existing inputs (e.g., small random modifications to select features)
 * Generate "fake data" with Generative Adversarial Networks
-
-
-----
-## ML Models = Untestable Software?
-
-<div class="small">
-
-```java
-@Test
-void testCancerPrediction() {
-  cancerModel.predict(generateRandomImage())
-}
-```
-
-
-
-* Manually construct input-output pairs (does not scale, cannot automate)
-    - **too expensive at scale**
-* Comparison against gold standard (e.g., alternative implementation, executable specification)
-    - **no specification, usually no other "correct" model**
-    - comparing different techniques useful? (see ensemble learning)
-    - semi-supervised learning as approximation?
-* Checking of global properties only -- crashes, buffer overflows, code injections    - **??**
-* Manually written assertions -- partial specifications checked at runtime    - **??**
+* *Production data*
 
 </div>
-
 
 
 ----
@@ -1110,6 +1101,11 @@ Much of the security, safety and robustness literature in ML focuses on invarian
 
 
 
+
+---
+# Audits and Red Teaming
+
+<!-- discussion -->
 
 
 
