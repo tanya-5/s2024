@@ -573,6 +573,68 @@ Incrementality
 
 
 
+
+---
+## Constraints and Tradeoffs
+
+![Pareto Front Example](pareto-front.svg)
+<!-- .element: class="stretch plain" -->
+
+Notes:
+
+How do I decide which ML algorithm to use for my project?
+
+Criteria: Quality Attributes & Constraints
+
+----
+## Constraints
+
+Constraints define the space of attributes for valid design solutions
+
+![constraints](design-space.svg)
+<!-- .element: class="stretch plain" -->
+
+Note: Design space exploration: The space of all possible designs (dotted rectangle) is reduced by several constraints on qualities of the system, leaving only a subset of designs for further consideration (highlighted center area).
+
+
+----
+## Types of Constraints
+
+**Problem constraints**: Minimum required QAs for an acceptable product
+
+**Project constraint**s: Deadline, project budget, available personnel/skills
+
+**Design constraints**
+* Type of ML task required (regression/classification)
+* Available data
+* Limits on computing resources, max. inference cost/time
+
+----
+## Constraints: Cancer Prognosis?
+
+![Radiology scans](radiology-scan.jpg) 
+<!-- .element: class="stretch" -->
+
+----
+## Constraints: Music Recommendations?
+
+![Spotify](spotify.png) 
+<!-- .element: class="stretch" -->
+
+----
+## Trade-offs between ML algorithms
+
+If there are multiple ML algorithms that satisfy the given constraints, which
+one do we select?
+
+Different ML qualities may conflict with each other; this requires
+making a __trade-off__ between these qualities
+
+Among the qualities of interest, which one(s) do we care the most
+about?
+* And which ML algorithm is most suitable for achieving those qualities?
+* (Similar to requirements conflicts)
+
 ---
 # Common ML Algorithms and their Qualities
 
@@ -748,98 +810,6 @@ Strubell, Emma, Ananya Ganesh, and Andrew McCallum. "[Energy and Policy Consider
 <!-- references -->
 Strubell, Emma, Ananya Ganesh, and Andrew McCallum. "[Energy and Policy Considerations for Deep Learning in NLP](https://arxiv.org/pdf/1906.02243.pdf)." In Proc. ACL, pp. 3645-3650. 2019.
 
-
-
-
-
-
-
-
-
-
----
-# Constraints and Tradeoffs
-
-![Pareto Front Example](pareto-front.svg)
-<!-- .element: class="stretch plain" -->
-
-
-----
-## Design Decision: ML Model Selection
-
-How do I decide which ML algorithm to use for my project?
-
-Criteria: Quality Attributes & Constraints
-
-----
-## Constraints
-
-Constraints define the space of attributes for valid design solutions
-
-![constraints](design-space.svg)
-<!-- .element: class="stretch plain" -->
-
-Note: Design space exploration: The space of all possible designs (dotted rectangle) is reduced by several constraints on qualities of the system, leaving only a subset of designs for further consideration (highlighted center area).
-
-
-----
-## Types of Constraints
-
-**Problem constraints**: Minimum required QAs for an acceptable product
-
-**Project constraint**s: Deadline, project budget, available personnel/skills
-
-**Design constraints**
-* Type of ML task required (regression/classification)
-* Available data
-* Limits on computing resources, max. inference cost/time
-
-----
-## Constraints: Cancer Prognosis?
-
-![Radiology scans](radiology-scan.jpg) 
-<!-- .element: class="stretch" -->
-
-----
-## Constraints: Music Recommendations?
-
-![Spotify](spotify.png) 
-<!-- .element: class="stretch" -->
-
-----
-## Trade-offs between ML algorithms
-
-If there are multiple ML algorithms that satisfy the given constraints, which
-one do we select?
-
-Different ML qualities may conflict with each other; this requires
-making a __trade-off__ between these qualities
-
-Among the qualities of interest, which one(s) do we care the most
-about?
-* And which ML algorithm is most suitable for achieving those qualities?
-* (Similar to requirements conflicts)
-
-----
-## Multi-Objective Optimization
-
-<!-- colstart -->
-
-* Determine optimal solutions given multiple, possibly
-  **conflicting** objectives
-* **Dominated** solution: A solution that is inferior to
-  others in every way 
-* **Pareto frontier**: A set of non-dominated solutions
-* Consider trade-offs among Pareto optimal solutions
-
-<!-- col -->
-
-![Pareto Front Example](pareto-front.svg)
-<!-- .element: class="stretch plain" -->
-
-<!-- colend -->
-
-Note: Tradeoffs among multiple design solutions along two dimensions (cost and error). Gray solutions are all dominated by others that are better both in terms of cost and error (e.g., solution D has worse error and worse cost than solution A). The remaining black solutions are each better than another solution on one dimension but worse on another — they are all pareto optimal and which solution to pick depends on the relative importance of the dimensions.
 
 
 ----
