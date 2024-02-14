@@ -9,7 +9,6 @@ Complete all the Deliverables mentioned below and show it to a TA for credit.
 - [ ] Setup Docker on your system
 - [ ] Containerize the Flask App
 - [ ] Deploy Machine Learning Models on Docker
-    - [ ] In this lab, we only copy the model file and run inference on Docker. Some approaches also involve both training the model and running inference on Docker. Would you think this a good approach? Discuss pros/cons with your TA.
 
 ## Deliverable 1 - Setup Docker
 
