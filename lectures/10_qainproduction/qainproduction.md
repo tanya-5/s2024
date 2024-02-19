@@ -2,7 +2,7 @@
 author: Christian Kaestner and Eunsuk Kang
 title: "MLiP: Testing in Production"
 semester: Spring 2023
-footer: "Machine Learning in Production/AI Engineering • Christian Kaestner & Eunsuk Kang, Carnegie Mellon University • Spring 2023"
+footer: "Machine Learning in Production/AI Engineering • Christian Kaestner & Claire Le Goues, Carnegie Mellon University • Spring 2024"
 license: Creative Commons Attribution 4.0 International (CC BY 4.0)
 ---  
 <!-- .element: class="titleslide"  data-background="../_chapterimg/10_qainproduction.jpg" -->
@@ -41,7 +41,7 @@ license: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 
 Required Reading: 
-* 🕮 Hulten, Geoff. "[Building Intelligent Systems: A Guide to Machine Learning Engineering.](https://www.buildingintelligentsystems.com/)" Apress, 2018, Chapters 14 and 15 (Intelligence Management and Intelligent Telemetry).
+* Hulten, Geoff. "[Building Intelligent Systems: A Guide to Machine Learning Engineering.](https://www.buildingintelligentsystems.com/)" Apress, 2018, Chapters 14 and 15 (Intelligence Management and Intelligent Telemetry).
 
 Suggested Readings: 
 * Alec Warner and Štěpán Davidovič. "[Canary Releases](https://landing.google.com/sre/workbook/chapters/canarying-releases/)." in [The Site Reliability Workbook](https://landing.google.com/sre/books/), O'Reilly 2018
@@ -627,8 +627,6 @@ Independent measurements
 * 
 * 3 random errors, each +/- 1
 * Measurements : 7 (12.5%), 9 (37.5), 11 (37.5), 12 (12.5)
-----
-<iframe src='https://gfycat.com/ifr/PleasingMeaslyGalapagossealion' frameborder='0' scrolling='no' allowfullscreen width='1200' height='700'></iframe>
 ----
 ## Normal Distribution
 ![Normal distribution](normaldist.png)
