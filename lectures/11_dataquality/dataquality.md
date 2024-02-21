@@ -298,7 +298,7 @@ Inaccurate data -> misleading models, biased models
 
 ---
 
-# Data Schema
+# Data Integrety / Schema
 
 Ensuring basic consistency about shape and types
 
@@ -312,19 +312,6 @@ Ensuring basic consistency about shape and types
 *Problems with this data?*
 
 
-
-----
-## Data Quality Problems
-
-![Quality Problems Taxonomy](qualityproblems.png)
-<!-- .element: class="stretch" -->
-
-* Schema-level: Generic, domain-independent issues in data
-* Instance-level: Application- and domain-specific
-
-<!-- references_ -->
-
-Source: Rahm, Erhard, and Hong Hai Do. [Data cleaning: Problems and current approaches](http://dc-pubs.dbs.uni-leipzig.de/files/Rahm2000DataCleaningProblemsand.pdf). IEEE Data Eng. Bull. 23.4 (2000): 3-13.
 
 
 ----
@@ -530,7 +517,7 @@ Well supported in databases and many tools
 
 
 ---
-# Instance-Level Problems
+# Wrong and Inconsistent Data
 
 Application- and domain-specific data issues
 
@@ -544,7 +531,7 @@ Application- and domain-specific data issues
 
 
 ----
-## Instance-Level Problems
+## Wrong and Inconsistent Data
 
 
 * Missing values: `phone=9999-999999`
@@ -562,7 +549,7 @@ Further readings: Rahm, Erhard, and Hong Hai Do. [Data cleaning: Problems and cu
 
 
 ----
-## Discussion: Instance-Level Problems?
+## Discussion: Wrong and Inconsistent Data?
 
 ![Shelves in a warehouse](warehouse.jpg)
 <!-- .element: class="stretch" -->
