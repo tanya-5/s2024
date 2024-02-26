@@ -19,7 +19,7 @@
 | Mon, Feb 19 | [Testing in Production](https://mlip-cmu.github.io/s2024/slides/10_qainproduction/qainproduction.html) ([book chapter](https://ckaestne.medium.com/quality-assurance-in-production-for-ml-enabled-systems-4d1b3442316f)) |  | [M1: Modeling and First Deployment](https://github.com/mlip-cmu/s2024/blob/main/assignments/project.md) |
 | Wed, Feb 21 | [Data Quality](https://mlip-cmu.github.io/s2024/slides/11_dataquality/dataquality.html) ([book chapter](https://ckaestne.medium.com/data-quality-for-building-production-ml-systems-2e0cc7e6113f)) |  |  |
 | Fri, Feb 23 | ![Lab](https://img.shields.io/badge/-lab-yellow.svg) Continuous Integration: Jenkins |  |  |
-| Mon, Feb 26 | Automating and Testing ML Pipelines ([book chapter 1](https://ckaestne.medium.com/quality-assurance-basics-6ce1eca9921), [chapter 2](https://ckaestne.medium.com/quality-assurance-for-machine-learning-pipelines-d495b8e5ad6a), [chapter 3](https://ckaestne.medium.com/integration-and-system-testing-bc4db6650d1)) |  |  |
+| Mon, Feb 26 | [Automating and Testing ML Pipelines](https://mlip-cmu.github.io/s2024/slides/12_pipelinequality/pipelinequality.html) ([book chapter 1](https://ckaestne.medium.com/quality-assurance-basics-6ce1eca9921), [chapter 2](https://ckaestne.medium.com/quality-assurance-for-machine-learning-pipelines-d495b8e5ad6a), [chapter 3](https://ckaestne.medium.com/integration-and-system-testing-bc4db6650d1)) |  |  |
 | Wed, Feb 28 | ![Midterm](https://img.shields.io/badge/-midterm-blue.svg) Midterm  |  |  |
 | Fri, Mar 01 | ![Break](https://img.shields.io/badge/-break-red.svg) No lab, happy spring break |  |  |
 | Mon, Mar 04 | ![Break](https://img.shields.io/badge/-break-red.svg) Spring break, no classes  |  |  |
