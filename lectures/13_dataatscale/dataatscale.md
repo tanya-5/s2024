@@ -755,14 +755,14 @@ How do you get the right data to the right place in the right format?
 Molham Aref "[Business Systems with Machine Learning](https://www.youtube.com/watch?v=_bvrzYOA8dY)"
 
 ---
-# Breakout: Vimeo Videos
+# Breakout: Scaling Albumly 
 
 As a group, discuss and post in `#lecture`, tagging group members:
 * How to distribute storage:
-* How to design scalable copy-right protection solution:
-* How to design scalable analytics (views, ratings, ...):
+* How to design scalable search index (object detect):
+* How to design scalable analytics (view count):
 
-[![Vimeo page](vimeo.png)](https://vimeo.com/about)
+![Albumy screenshot](albumy.png)
 
 ---
 # Excursion: ETL Tools
