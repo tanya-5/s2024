@@ -128,128 +128,6 @@ Kristie Bertucci. [16 NSFW Movies Streaming on Netflix](https://www.gadgetreview
 
 
 
----
-
-# Provenance Tracking
-
-*Historical record of data and its origin*
-
-----
-
-## Data Provenance
-
-<!-- colstart -->
-* Track origin of all data
-    - Collected where?
-    - Modified by whom, when, why?
-    - Extracted from what other data or model or algorithm?
-* ML models often based on data drived from many sources through many steps, including other models
-<!-- col -->
-
-![Example of dataflows between 4 sources and 3 models in credit card application scenario](creditcard-provenance.svg)
-<!-- .element: class="plain stretch" -->
-
-<!-- colend -->
-----
-## Excursion: Provenance Tracking in Databases
-
-Whenever value is changed, record:
-  - who changed it
-  - time of change
-  - history of previous values
-  - possibly also justifcation of why
-
-Embedded as feature in some databases or implemented in business logic
-
-Possibly signing with cryptographic methods
-
-
-----
-
-## Tracking Data Lineage
-
-Document all data sources
-
-Identify all model dependencies and flows
-
-Ideally model all data and processing code
-
-Avoid "visibility debt"
-
-(Advanced: Use infrastructure to automatically capture/infer dependencies and flows as in [Goods](http://research.google.com/pubs/archive/45390.pdf))
-
-
-
-----
-## Feature Provenance
-
-How are features extracted from raw data?
-  - during training
-  - during inference
-
-Has feature extraction changed since the model was trained?
-
-Recommendation: Modularize and version feature extraction code
-
-**Example?**
-
-----
-## Advanced Practice: Feature Store
-
-Stores feature extraction code as functions, versioned
-
-Catalog features to encourage reuse
-
-Compute and cache features centrally
-
-Use same feature used in training and inference code
-
-Advanced: Immutable features -- never change existing features, just add new ones (e.g., creditscore, creditscore2, creditscore3)
-
-
-----
-## Model Provenance
-
-How was the model trained?
-
-What data? What library? What hyperparameter? What code?
-
-Ensemble of multiple models?
-
-----
-![Example of dataflows between 4 sources and 3 models in credit card application scenario](creditcard-provenance.svg)
-<!-- .element: class="plain stretch" -->
-
-----
-## In Real Systems: Tracking Provenance Across Multiple Models
-
-
-![Meme generator chaining 2 models](memgen-provenance.svg)
-<!-- .element: class="plain stretch" -->
-
-
-<!-- references_ -->
-Example adapted from Jon Peck. [Chaining machine learning models in production with Algorithmia](https://algorithmia.com/blog/chaining-machine-learning-models-in-production-with-algorithmia). Algorithmia blog, 2019
-----
-## Complex Model Composition: ML Models for Feature Extraction
-
-![Architecture of Apollo](apollo.png)
-<!-- .element: class="stretch" -->
-
-<!-- references_ -->
-Image: Peng, Zi, Jinqiu Yang, Tse-Hsun Chen, and Lei Ma. "A first look at the integration of machine learning models in complex autonomous driving systems: a case study on Apollo." In Proc. FSE. 2020.
-
-----
-## Summary: Provenance
-
-Data provenance
-
-Feature provenance
-
-Model provenance
-
-
-
 
 
 
@@ -259,9 +137,21 @@ Model provenance
 ----
 ## How to Version Large Datasets?
 
-<!-- discussion -->
+```
+InquiryID,CustomerID,InquiryDate,LoanType,LoanAmount,AccountStatus,PaymentStatus
+1001,001,2020-01-15,Mortgage,250000,Open,Current
+1002,002,2020-02-20,Auto Loan,20000,Closed,Paid Off
+1003,003,2020-03-05,Credit Card,5000,Open,Late (30 days)
+1004,004,2020-04-10,Personal Loan,10000,Open,Current
+1005,005,2020-05-15,Student Loan,30000,Closed,Paid Off
+1006,001,2020-06-20,Mortgage,200000,Open,Current
+1007,002,2020-07-25,Credit Card,7000,Open,Late (60 days)
+1008,003,2020-08-30,Auto Loan,15000,Closed,Paid Off
+1009,004,2020-09-10,Personal Loan,8000,Open,Current
+1010,005,2020-10-15,Credit Card,10000,Open,Late (90 days)
+```
 
-(movie ratings, movie metadata, user data?)
+(example customer data from the credit scenario)
 
 ----
 ## Recall: Event Sourcing
@@ -500,6 +390,130 @@ Track which prediction has been performed with which model version (logging)
 
 ![Meme generator chaining 2 models](memgen-provenance.svg)
 <!-- .element: class="plain stretch" -->
+
+
+
+
+
+---
+
+# Provenance Tracking
+
+*Historical record of data and its origin*
+
+----
+
+## Data Provenance
+
+<!-- colstart -->
+* Track origin of all data
+    - Collected where?
+    - Modified by whom, when, why?
+    - Extracted from what other data or model or algorithm?
+* ML models often based on data drived from many sources through many steps, including other models
+<!-- col -->
+
+![Example of dataflows between 4 sources and 3 models in credit card application scenario](creditcard-provenance.svg)
+<!-- .element: class="plain stretch" -->
+
+<!-- colend -->
+----
+## Excursion: Provenance Tracking in Databases
+
+Whenever value is changed, record:
+  - who changed it
+  - time of change
+  - history of previous values
+  - possibly also justifcation of why
+
+Embedded as feature in some databases or implemented in business logic
+
+Possibly signing with cryptographic methods
+
+
+----
+
+## Tracking Data Lineage
+
+Document all data sources
+
+Identify all model dependencies and flows
+
+Ideally model all data and processing code
+
+Avoid "visibility debt"
+
+(Advanced: Use infrastructure to automatically capture/infer dependencies and flows as in [Goods](http://research.google.com/pubs/archive/45390.pdf))
+
+
+
+----
+## Feature Provenance
+
+How are features extracted from raw data?
+  - during training
+  - during inference
+
+Has feature extraction changed since the model was trained?
+
+Recommendation: Modularize and version feature extraction code
+
+**Example?**
+
+----
+## Advanced Practice: Feature Store
+
+Stores feature extraction code as functions, versioned
+
+Catalog features to encourage reuse
+
+Compute and cache features centrally
+
+Use same feature used in training and inference code
+
+Advanced: Immutable features -- never change existing features, just add new ones (e.g., creditscore, creditscore2, creditscore3)
+
+
+----
+## Model Provenance
+
+How was the model trained?
+
+What data? What library? What hyperparameter? What code?
+
+Ensemble of multiple models?
+
+----
+![Example of dataflows between 4 sources and 3 models in credit card application scenario](creditcard-provenance.svg)
+<!-- .element: class="plain stretch" -->
+
+----
+## In Real Systems: Tracking Provenance Across Multiple Models
+
+
+![Meme generator chaining 2 models](memgen-provenance.svg)
+<!-- .element: class="plain stretch" -->
+
+
+<!-- references_ -->
+Example adapted from Jon Peck. [Chaining machine learning models in production with Algorithmia](https://algorithmia.com/blog/chaining-machine-learning-models-in-production-with-algorithmia). Algorithmia blog, 2019
+----
+## Complex Model Composition: ML Models for Feature Extraction
+
+![Architecture of Apollo](apollo.png)
+<!-- .element: class="stretch" -->
+
+<!-- references_ -->
+Image: Peng, Zi, Jinqiu Yang, Tse-Hsun Chen, and Lei Ma. "A first look at the integration of machine learning models in complex autonomous driving systems: a case study on Apollo." In Proc. FSE. 2020.
+
+----
+## Summary: Provenance
+
+Data provenance
+
+Feature provenance
+
+Model provenance
 
 
 
