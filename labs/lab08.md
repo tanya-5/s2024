@@ -13,7 +13,7 @@ To receive credit for this lab, show your work to the TA during recitation.
 
 ## Getting started
 - Ensure Python (preferably 3.8, 3.9, 3.10) and Docker is installed on your machine.
-- Clone the starter code from this [Git repository](#) 
+- Clone the starter code from this [Git repository](https://github.com/tanya-5/mlip-monitoring-lab) 
 - Navigate to the folder mlip-monitoring-lab
 - Install required dependencies
     - `pip install -r requirements.txt`
