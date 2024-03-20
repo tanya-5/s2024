@@ -472,13 +472,11 @@ Incremental prototypes, starting with most risky components
 ----
 ## Selecting Process Models
 
-Individually, vote in slack:
+Individually, vote in `#lecture` slack:
 [1] Ad-hoc
 [2] Waterfall
 [3] Spiral
 [4] Agile
-
-and write a short justification in `#lecture`
 
 ![Zillow](zillow_main.png)
 
